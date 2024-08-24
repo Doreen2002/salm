@@ -1,0 +1,95 @@
+*
+body {
+  margin: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* home page styles */
+.home-content-container-one
+{
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  
+}
+
+.logo
+{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(145, 231, 145);
+  text-align: center;
+}
+.home-mental-image img
+{
+  width: 600px;
+  height: 600px;
+}
+.home-page-descp-container
+{
+  margin-top: 100px;
+ 
+}
+.home-web-app-title
+{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(145, 231, 145);
+  text-align: center;
+  margin-bottom: 150px;
+}
+.home-web-app-descp
+{
+  font-size: 30px;
+ color: rgb(28, 192, 28);
+  text-align: center;
+  line-height: 60px;
+
+}
+
+.home-content-container-two
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-share-your-story
+{
+  text-decoration: underline;
+  font-size: 40px;
+  color: rgb(145, 231, 145);
+}
+
+/* header styles */
+.header-links-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.header-links
+{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none; 
+  
+}
+
+a:active
+{
+  text-decoration: underline;
+  color: green;
+}
+
+a:hover{
+
+}
+
+a:visited
+{
+
+}
