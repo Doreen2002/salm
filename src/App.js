@@ -1,13 +1,19 @@
-import logo from './logo.svg';
+
 import './styles/App.css';
-import { BrowserRouter } from 'react-router-dom'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/home.js"
+
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Homepage/>
+    <Routes>
+        <Route path="/" element={<Homepage/>}>
+          <Route index element={<Homepage />} />
+        </Route>
+      </Routes>
     </div>
     </BrowserRouter>
 
