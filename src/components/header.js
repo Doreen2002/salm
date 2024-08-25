@@ -13,6 +13,7 @@ export default function Header()
             <ul className="header-links">
                 <li><Link to = {PathConstants.Home}>Home</Link></li>
                 <li><Link to = {PathConstants.About}>About</Link></li>
+                <li><Link to = {PathConstants.About}>Stories</Link></li>
             </ul>
             </div>
            

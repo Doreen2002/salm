@@ -5,8 +5,14 @@ import InspireImage from"../assets/Friendship-pana.png"
 import EncourageImage from "../assets/Friendship-amico.png"
 import Header from "../components/header.js"
 import StoryForm  from "../components/story_form.js"
+import Footer from "../components/footer.js"
 export default function Homepage()
 {
+    const containerTwoContent =[
+        {"image": InspireImage, "text": "Inspire", "style":{"flexDirection":"row-reverse", "marginBottom":"20px"}},
+        {"image": EncourageImage, "text": "Encourage", "style":{ "marginBottom":"20px"}},
+        {"image": InspireImage, "text": "Support", "style":{"flexDirection":"row-reverse", "marginBottom":"0px"}},
+    ]
     return(
         <Fragment>
             <Header/>
@@ -22,23 +28,21 @@ export default function Homepage()
             </div>
             <div className="home-share-your-story">Share Your Story</div>
             <div className="home-content-container-two">
-                <div>
-                <div className="home-content-container-img-holder">
+                <div className="home-content-container-img-holder-parent" >
+                {containerTwoContent.map((field, index)=>
+                     <div   className="home-content-container-img-holder" style={field.style} key={index} >
                     
-                    <div><img src={InspireImage}/></div>
-                    <div>Inspire</div>
-                </div>
-                <br></br>
-                <div className="home-content-container-img-holder">
-                <div>Encourage</div>
-                    <div><img src={EncourageImage}/></div>
-                  
-                </div>
+                     <div><img src={field.image}/></div>
+                     <div>{field.text}</div>
+                 </div>
+
+                )}
+                
                 </div>
                
                 <StoryForm/>
             </div>
-            
+            <Footer/>
         </Fragment>
         
     )
