@@ -24,7 +24,7 @@ export default function Homepage()
                 Whether you’re seeking encouragement or ready to inspire others, Salm is the place where every story matters. Join us in creating a supportive community for those battling mental health challenges.
                     </div>
                     </div>
-                <div className="home-mental-image"><img src={MentalImage}/></div>
+                <div className="home-mental-image"><img alt="image" src={MentalImage}/></div>
             </div>
             <div className="home-share-your-story">Share Your Story</div>
             <div className="home-content-container-two">
@@ -32,7 +32,7 @@ export default function Homepage()
                 {containerTwoContent.map((field, index)=>
                      <div   className="home-content-container-img-holder" style={field.style} key={index} >
                     
-                     <div><img src={field.image}/></div>
+                     <div><img alt="image" src={field.image}/></div>
                      <div>{field.text}</div>
                  </div>
 
