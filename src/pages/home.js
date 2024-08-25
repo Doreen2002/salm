@@ -15,7 +15,6 @@ export default function Homepage()
     ]
     return(
         <Fragment>
-            <Header/>
             <div className="home-content-container-one">
 
                 <div className="home-page-descp-container">
