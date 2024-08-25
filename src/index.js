@@ -11,6 +11,7 @@ import Header from './components/layout.js';
 
 export default  function App() {
   return (
+   
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Header/>}>
@@ -28,5 +29,10 @@ export default  function App() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
 

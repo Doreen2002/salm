@@ -1,15 +1,10 @@
-
-import { Fragment } from "react"
-import MentalImage from "../assets/Mental health-bro.png"
-import InspireImage from"../assets/Friendship-pana.png"
-import EncourageImage from "../assets/Friendship-amico.png"
 import StoryForm  from "../components/story_form.js"
 export default function Homepage()
 {
     const containerTwoContent =[
-        {"image": InspireImage, "text": "Inspire", "style":{"flexDirection":"row-reverse", "marginBottom":"20px"}},
-        {"image": EncourageImage, "text": "Encourage", "style":{ "marginBottom":"20px"}},
-        {"image": InspireImage, "text": "Support", "style":{"flexDirection":"row-reverse", "marginBottom":"0px"}},
+        {"image": `${process.env.PUBLIC_URL}/assets/Friendship-pana.png`, "text": "Inspire", "style":{"flexDirection":"row-reverse", "marginBottom":"20px"}},
+        {"image": `${process.env.PUBLIC_URL}/assets/Friendship-amico.png`, "text": "Encourage", "style":{ "marginBottom":"20px"}},
+        {"image": `${process.env.PUBLIC_URL}/assets/Friendship-pana.png`, "text": "Support", "style":{"flexDirection":"row-reverse", "marginBottom":"0px"}},
     ]
     return(
         <>
@@ -21,7 +16,7 @@ export default function Homepage()
                 Whether you’re seeking encouragement or ready to inspire others, Salm is the place where every story matters. Join us in creating a supportive community for those battling mental health challenges.
                     </div>
                     </div>
-                <div className="home-mental-image"><img alt="image" src={MentalImage}/></div>
+                <div className="home-mental-image"><img alt="image" src={`${process.env.PUBLIC_URL}/assets/Mental health-bro.png`}/></div>
             </div>
             <div className="home-share-your-story">Share Your Story</div>
             <div className="home-content-container-two">
