@@ -1,8 +1,7 @@
 {
   "name": "mental-health-app",
   "version": "0.1.0",
-  "homepage": "https://salm.netlify.app/",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
