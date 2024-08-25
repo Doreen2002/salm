@@ -3,9 +3,7 @@ import { Fragment } from "react"
 import MentalImage from "../assets/Mental health-bro.png"
 import InspireImage from"../assets/Friendship-pana.png"
 import EncourageImage from "../assets/Friendship-amico.png"
-import Header from "../components/header.js"
 import StoryForm  from "../components/story_form.js"
-import Footer from "../components/footer.js"
 export default function Homepage()
 {
     const containerTwoContent =[
@@ -14,7 +12,7 @@ export default function Homepage()
         {"image": InspireImage, "text": "Support", "style":{"flexDirection":"row-reverse", "marginBottom":"0px"}},
     ]
     return(
-        <Fragment>
+        <>
             <div className="home-content-container-one">
 
                 <div className="home-page-descp-container">
@@ -41,8 +39,8 @@ export default function Homepage()
                
                 <StoryForm/>
             </div>
-            <Footer/>
-        </Fragment>
+          
+        </>
         
     )
 }
