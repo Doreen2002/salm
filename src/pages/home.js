@@ -1,6 +1,6 @@
 import StoryForm  from "../components/story_form.js"
 export default function Homepage()
-{
+{ 
     const containerTwoContent =[
         {"image": `${process.env.PUBLIC_URL}/assets/Friendship-pana.png`, "text": "Inspire", "style":{"flexDirection":"row-reverse", "marginBottom":"20px"}},
         {"image": `${process.env.PUBLIC_URL}/assets/Friendship-amico.png`, "text": "Encourage", "style":{ "marginBottom":"20px"}},
