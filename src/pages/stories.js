@@ -12,11 +12,13 @@ export default function Stories() {
         console.log(todos)
     }
 
+
+
     useEffect(() => {
         fetchTodoItems(number)
     }, [number])
 
-
+    
 
     const handleIncrement = () => {
         setNumber(number + 1);

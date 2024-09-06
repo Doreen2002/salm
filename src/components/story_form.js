@@ -1,3 +1,4 @@
+
 import SubmitBotton from "./button"
 import { useState } from "react";
 export default function StoryForm()
@@ -15,8 +16,26 @@ export default function StoryForm()
         {"lable":"Write your story:", "input_type":"text", "style": {"width":"600px", "height":"300px", "borderRadius":"20px", "border":"1px dotted rgb(28, 192, 28)", "backgroundColor":"inherit"}, "value":inputs.story, name:"story"},
 
     ]
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        console.log('Another variable:', process.env);
+            // const response = await fetch("https://api.openai.com/v1/chat/completions", {
+            //     method:"POST",
+            //     headers:{
+            //         'Content-Type': 'application/json',
+            //         Authorization: `Bearer ${process.env.CHATGPT_API_KEY}`,
+            //     },
+                
+            //     body:JSON.stringify({
+            //         model: 'gpt-4',
+            //         messages: [{ role: 'user', content: `Turn the following text into a narrative with a clear beginning, middle, and end, written in a way that engages the reader ${inputs.story}` }],
+            //     })
+            // })
+            // const data = await response.json()
+            // console.log(data)
+        
+        
      console.log(inputs)
+     
     }
     return(
         <div className="story-form-container">
