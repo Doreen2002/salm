@@ -1,5 +1,5 @@
 
-import SubmitBotton from "./button"
+import SubmitBotton from "./Button"
 import { useState } from "react";
 export default function StoryForm()
 {
@@ -11,13 +11,15 @@ export default function StoryForm()
       setInputs(values => ({...values, [name]: value}))
     }
     const formData = [
-        {"lable":"Enter Title:", "input_type":"text", "style": {"width":"600px", "height":"40px", "borderRadius":"20px", "border":"1px dotted rgb(28, 192, 28)", "backgroundColor":"inherit"}, "value":inputs.title, name:"title"},
-        {"lable":"Category:", "input_type":"text", "style": {"width":"600px", "height":"40px", "borderRadius":"20px", "border":"1px dotted rgb(28, 192, 28)", "backgroundColor":"inherit"}, "value":inputs.category, name:"category"},
-        {"lable":"Write your story:", "input_type":"text", "style": {"width":"600px", "height":"300px", "borderRadius":"20px", "border":"1px dotted rgb(28, 192, 28)", "backgroundColor":"inherit"}, "value":inputs.story, name:"story"},
+        {"lable":"Enter Title:", "input_type":"text", "style": {"width":"600px", "height":"40px", "borderRadius":"7px", "border":"1px solid rgb(145, 231, 145)", "backgroundColor":"inherit"}, "value":inputs.title, name:"title"},
+        {"lable":"Category:", "input_type":"text", "style": {"width":"600px", "height":"40px", "borderRadius":"7px", "border":"1px solid rgb(145, 231, 145)", "backgroundColor":"inherit"}, "value":inputs.category, name:"category"},
+        {"lable":"Write your story:", "input_type":"text", "style": {"width":"600px", "height":"300px", "borderRadius":"7px", "border":"1px solid rgb(145, 231, 145)", "backgroundColor":"inherit"}, "value":inputs.story, name:"story"},
 
     ]
     const handleSubmit = async () => {
-        console.log('Another variable:', process.env);
+
+        console.log(process.env.CHATGPT_API_KEY)
+        
             // const response = await fetch("https://api.openai.com/v1/chat/completions", {
             //     method:"POST",
             //     headers:{

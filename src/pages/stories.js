@@ -2,37 +2,16 @@ import { useEffect, useState } from "react"
 
 
 export default function Stories() {
-    const [number, setNumber] = useState(1);
-    const [todos, setTodos] = useState([])
-
-    const fetchTodoItems = async (number) => {
-        const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${number}`);
-        const data = await response.json()
-        setTodos([...todos, data])
-        console.log(todos)
-    }
-
-
-
-    useEffect(() => {
-        fetchTodoItems(number)
-    }, [number])
-
-    
-
-    const handleIncrement = () => {
-        setNumber(number + 1);
-    }
+   const stories = [1, 2,3, 4,5,6,7,8,9,10]
 
     return (
-        <div>
-            {todos.map((todo) =>
-                (<div key={todo.id}>{todo.title}</div>)
-            )}
+        <div class="stories-page-container">
+            {stories.map((field, index)=>
+            <div className="story-container">
 
-            <button onClick={handleIncrement}>
-                Increment
-            </button>
+            </div>
+            )}
+            
         </div>
     )
 }

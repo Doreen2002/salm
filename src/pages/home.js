@@ -1,10 +1,11 @@
-import StoryForm  from "../components/story_form.js"
+import StoryForm  from "../components/StoryForm.js"
 export default function Homepage()
 { 
     const containerTwoContent =[
         {"image": `${process.env.PUBLIC_URL}/assets/Friendship-pana.png`, "text": "Inspire", "style":{"flexDirection":"row-reverse", "marginBottom":"20px"}},
         {"image": `${process.env.PUBLIC_URL}/assets/Friendship-amico.png`, "text": "Encourage", "style":{ "marginBottom":"20px"}},
-        {"image": `${process.env.PUBLIC_URL}/assets/Friendship-pana.png`, "text": "Support", "style":{"flexDirection":"row-reverse", "marginBottom":"0px"}},
+        {"image": `${process.env.PUBLIC_URL}/assets/Friendship-pana.png`, "text": "Inspire", "style":{"flexDirection":"row-reverse", "marginBottom":"20px"}},
+        {"image": `${process.env.PUBLIC_URL}/assets/Friendship-amico.png`, "text": "Encourage", "style":{ "marginBottom":"20px"}},
     ]
     return(
         <>
@@ -19,8 +20,11 @@ export default function Homepage()
                 <div className="home-mental-image"><img alt="image" src={`${process.env.PUBLIC_URL}/assets/Mental health-bro.png`}/></div>
             </div>
             <div className="home-share-your-story">Share Your Story</div>
+
             <div className="home-content-container-two">
-                <div className="home-content-container-img-holder-parent" >
+            <StoryForm/>  
+            </div>
+          <div className="home-content-container-img-holder-parent" >
                 {containerTwoContent.map((field, index)=>
                      <div   className="home-content-container-img-holder" style={field.style} key={index} >
                     
@@ -31,10 +35,6 @@ export default function Homepage()
                 )}
                 
                 </div>
-               
-                <StoryForm/>
-            </div>
-          
         </>
         
     )

@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Homepage from "./pages/home.js"
-import Stories from './pages/stories.js';
-import About from './pages/about.js';
-import Header from './components/layout.js';
+import Homepage from "./pages/Home.js"
+import Stories from './pages/Stories.js';
+import About from './pages/About.js';
+import Header from './components/Layout.js';
 
 
 
