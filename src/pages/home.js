@@ -12,7 +12,7 @@ export default function Homepage()
             <div className="home-content-container-one">
 
                 <div className="home-page-descp-container">
-                    <div className="home-web-app-title">Welcome to Salm: Your Safe Space for Mental Health Journeys</div>
+                    <div className="home-web-app-title">Welcome to Salm:{process.env.REACT_APP_OPENAI_API_KEY} Your Safe Space for Mental Health Journeys</div>
                 <div className="home-web-app-descp">
                 Whether you’re seeking encouragement or ready to inspire others, Salm is the place where every story matters. Join us in creating a supportive community for those battling mental health challenges.
                     </div>

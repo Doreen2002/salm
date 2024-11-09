@@ -17,8 +17,6 @@ export default function StoryForm()
 
     ]
     const handleSubmit = async () => {
-
-        console.log(process.env.CHATGPT_API_KEY)
         
             // const response = await fetch("https://api.openai.com/v1/chat/completions", {
             //     method:"POST",
